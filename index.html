@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart home</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+
+  <body>
+    <head>
+      <div id="navbar">
+        <ul class="nav-links">
+          <li>
+            <a href="https://www.facebook.com/RoboticsWithRajib">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@roboticswithrajib">YouTube</a>
+          </li>
+          <li>
+            <a href="https://github.com/rajib-mte">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </head>
+
+    <section id="user-login">
+      <div class="card">
+        <h1>My Smart Home</h1>
+        <div id="statusBadge" class="status-badge offline">Offline</div>
+
+        <!-- Login UI -->
+        <div id="authBox">
+          <input id="emailField" type="email" placeholder="Email" required />
+          <input
+            id="passwordField"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <button id="loginBtn" class="btn login-btn">Login</button>
+          <p id="authMsg"></p>
+        </div>
+
+        <!-- Control UI -->
+        <div id="controlBox" style="display: none">
+          <button id="gpio1Btn" class="gpio-button" data-gpio="gpio1">
+            Light 1
+          </button>
+          <!-- <div id="gpio1Status" class="gpio-status">Status: OFF</div> -->
+
+          <button id="gpio2Btn" class="gpio-button" data-gpio="gpio2">
+            FAN
+          </button>
+          <!-- <div id="gpio2Status" class="gpio-status">FAN: OFF</div> -->
+
+          <button id="gpio3Btn" class="gpio-button" data-gpio="gpio3">
+            Light 2
+          </button>
+          <!-- <div id="gpio3Status" class="gpio-status">Status: OFF</div> -->
+
+          <button id="logoutBtn" class="btn logout-btn">Logout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS + Firebase Integrated -->
+
+    <!-- <footer id="footer">
+      <div class="social-links">
+        <h1>About me</h1>
+      </div>
+    </footer> -->
+  </body>
+</html>
