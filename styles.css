@@ -147,6 +147,7 @@ input {
 
 /* Modern GPIO Buttons */
 .gpio-button {
+  align-items: center;
   width: 200px;
   padding: 16px;
   margin: 20px 0 5px 0;
@@ -202,6 +203,6 @@ input::placeholder {
 
 .gpio-button img {
   /* background-color: red; */
-  width: 70%;
+  width: 100%;
   align-items: center;
 }
