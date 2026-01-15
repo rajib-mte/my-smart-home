@@ -144,4 +144,5 @@ void processData(AsyncResult &aResult) {
   if (fullPath == "/gpio3") digitalWrite(GPIO3, value ? HIGH : LOW);
 
   Serial.println("GPIO Updated.");
+  delay(50);
 }

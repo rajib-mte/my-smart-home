@@ -199,3 +199,9 @@ input::placeholder {
 /* #footer .social-links {
   text-align: right;
 } */
+
+.gpio-button img {
+  /* background-color: red; */
+  width: 70%;
+  align-items: center;
+}
